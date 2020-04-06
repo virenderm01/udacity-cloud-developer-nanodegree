@@ -32,3 +32,4 @@ Make sure that the *main* in package.json points to **www/server.js** instead of
 5. change directory to *kubeone_<version>_linux_amd64/examples/terraform/aws*
 6. Run `terraform init`
 7. You will now need to create the ssh keys and set the AWS key, secret and security token
+   If you get invalid client token error: please refer to this thread [Invalid Client Token](https://stackoverflow.com/questions/50121871/invalidclienttokenid-error-when-running-terraform-plan-apply)
