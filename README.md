@@ -14,4 +14,21 @@ Make sure that the *main* in package.json points to **www/server.js** instead of
  
  > This is assuming that your AWS credentials are stored in the _C drive_
  
- 
+ ## Creating kubernete cluster on AWS
+ 1. Create an EC2 instance in your AWS account.
+ 2. Login to the instance
+ 3. Install the kubeone from the documentation provided 
+ ```
+     * curl -LO https://github.com/kubermatic/kubeone/releases/download/v<version>/kubeone_<version>_<operating_system>_amd64.zip
+     * unzip kubeone_<version>_<operating_system>_amd64.zip -d kubeone_<version>_<operating_system>_amd64
+     * sudo mv kubeone_<version>_<operating_system>_amd64/kubeone /usr/local/bin
+```
+4. Install terraform 
+```
+    * curl -LO https://releases.hashicorp.com/terraform/<version>/terraform_<version>_linux_amd64.zip
+    * unzip terraform_<version>_linux_amd64.zip -d terraform_<version>_linux_amd64
+    * sudo mv terraform_<version>_linux_amd64/terraform /usr/local/bin
+```
+5. change directory to *kubeone_<version>_linux_amd64/examples/terraform/aws*
+6. Run `terraform init`
+7. You will now need to create the ssh keys and set the AWS key, secret and security token
