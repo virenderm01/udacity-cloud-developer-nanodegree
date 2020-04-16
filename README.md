@@ -33,3 +33,12 @@ Make sure that the *main* in package.json points to **www/server.js** instead of
 6. Run `terraform init`
 7. You will now need to create the ssh keys and set the AWS key, secret and security token
    If you get invalid client token error: please refer to this thread [Invalid Client Token](https://stackoverflow.com/questions/50121871/invalidclienttokenid-error-when-running-terraform-plan-apply)
+ 
+ 
+ ## Installing kubernetes on windows 10 home
+ > It is a bit tricky but the only way I could move forward with the assignment and project in Module 3 was with **Minikube**
+ 
+ Install the minikube using chocolatey
+ You can install chocolatey from here [Chocolatey Install](https://chocolatey.org/install)
+ Follow instructions on the minkube installation [here](https://kubernetes.io/docs/tasks/tools/install-minikube/)
+ 
